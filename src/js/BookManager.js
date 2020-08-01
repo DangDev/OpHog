@@ -184,25 +184,25 @@
 
                     var warningString = '';
                     if ( !game.UnitPlacementUI.purchasedAtLeastOneUnit() ) {
-                        warningString += '<div style="color:#550000">You need to purchase a unit before you can enter the world!</div><br/>';
+                        warningString += '<div style="color:#550000">Bạn cần tối thiểu một chiến binh để tham gia thế giới quái vật. Mua chiến binh ở dưới góc cùng bên phải!</div><br/>';
                     }
 
                     html = warningString + 
-                    '<div>Use ' + diamondsString + ' ' + diamondImgTag + ' to purchase units at the bottom right' + purchaseString + ', then tap the ' + spawnerImgTag + ' to enter a world.</div><br/>' + 
-                    '<div>Once in the world, you need to place your units using the buttons at the bottom left. Without units to defend, enemies will rush your castles, and when your castles reach 0 life, you lose.</div><br/>' + 
-                    '<div>These books can provide valuable information; make sure to read them all!</div>';
-                    title = 'The Book of Beginnings';
+                    '<div>Sử dụng ' + diamondsString + ' ' + diamondImgTag + ' để mua những chiến binh ở dưới góc cùng bên phải' + purchaseString + ', sau đó chọn ' + spawnerImgTag + ' để bắt đầu cuộc chiến.</div><br/>' + 
+                    '<div>Sau khi đã vào thế giới quái vật, bạn cần chọn những chiến binh xuất trận ở dưới góc cùng bên trái, hình của họ sẽ sáng lên khi bạn cho họ xuất trận. Nếu không ai xuất chiến, quân định sẽ tràn tới và rút dần dần máu thành của bạn. Khi thành giảm xuống 0%, bạn thua cuộc.</div><br/>' + 
+                    '<div>Còn nhiều cuốn sách sẽ giúp bạn rất nhiều trong chuyến hành trình, nếu gặp thì hãy đọc chúng nhé!</div>';
+                    title = 'Cuốn sách của sự khởi đầu';
                 } else if ( id == 1 ) {
                     var coinImgTag = 
                         '<img src="' + iconSheet.get1x1Sprite(game.Graphic.GOLD_COIN, true) + '" style="vertical-align:baseline"/>';
-                    title = 'Paperback of Placement';
-                    html = '<div>You\'re given coins ' + coinImgTag + ' at the beginning of each world so that you can place your units. After placing a unit, it will move and attack on its own.<br/><br/>Choose its location wisely! </div>';
+                    title = 'Sự thông minh của chiến binh';
+                    html = '<div>Mỗi lần bạn vào thế giới quái vật, bạn sẽ được nhận một số ' + coinImgTag + ', chúng được dùng để chiệu hồi các chiến binh. Sau khi họ xuất chiến, họ sẽ tự di chuyển và tấn công<br/><br/>Hãy nhớ rằng khi một chiến binh chết đi, sẽ cần một khoảng thời gian để họ hồi sinh trở lại. Chiến đấu một cách thông minh! </div>';
                 } else if ( id == 2 ) {
-                    title = 'Vision Volume';
-                    html = '<div>The black shroud you see is fog; you can see the terrain beneath it, but not enemies, treasure, or any other mysteries.<br/><br/>It helps to explore it quickly!</div>';
+                    title = 'Vùng đất hòa bình';
+                    html = '<div>Khoảng đen bao chùm khắp vùng đất là nơi chiến binh của bạn chưa đặt chân tới; bạn có thể thấy các vùng đất nhưng không thể thấy kẻ thù, rương báu cũng như một số vật phẩm đặc biệt khác.<br/><br/>Những chiến binh sẽ giúp ta khám phá chúng!</div>';
                 } else if ( id == 3 ) {
-                    title = 'Minigame Manuscript';
-                    html = '<div>After beating a world, you can choose to fight groups of enemies. The harder the enemies, the more diamonds you\'ll get!</div>';
+                    title = 'Thách đấu kẻ thù';
+                    html = '<div>Sau khi đánh bại hết lũ quái vật, bạn có quyền khiêu chiến với quái vật cấp cao hơn. Sẽ có nhiều lựa chọn cho bạn về số kẻ thù sẽ gặp. Chúng sẽ không đi lẻ tẻ đâu mà sẽ đánh hội đồng những chiến binh của bạn. Bạn sẽ nhận nhiều ' + diamondsString + ' ' + diamondImgTag + ' hơn nếu bạn đánh bại chúng, hoặc chọn bỏ qua để nhận thưởng ngay, nhưng sẽ ít hơn đấy!</div>';
                 } else if ( id == 4 ) {
                     var extraInstructions = '';
                     if ( game.playerUsedKeyboard ) {
