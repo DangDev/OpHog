@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>OpHog</title>
+        <title>Đại chiến quái vật</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -64,8 +64,8 @@
                 </div>
     			<div id="equippable-item-scroll-pane" style="margin-right:5px;" class="scroll-pane"></div>
     			<div id="usable-item-scroll-pane" style="margin-right:5px;" class="scroll-pane"></div>
-                <button id='useItemButton' style="margin-bottom:50px">Use</button><br/>
-                <button id='sellItemButton'>Sell</button>
+                <button id='useItemButton' style="margin-bottom:50px">Dùng</button><br/>
+                <button id='sellItemButton'>Bán</button>
             </div>
 
             <!-- Bottom part -->
@@ -75,7 +75,7 @@
         <div id="shop-screen" title="Shop" class="no-text-select">
             <div id="shop_div_without_item_description_in_it" style="position:absolute;top:0px;left:0px;width:100%;margin-top:5px">
                 <div id="shop_div_buy_button_and_timer" style="width: 340px;margin: 0px auto;">
-                    <button id="shopBuyButton" style="margin-bottom:5px; font-size:.75em">Buy</button>
+                    <button id="shopBuyButton" style="margin-bottom:5px; font-size:.75em">Mua</button>
                     <span id="newItemTimer" style="float: right"></span>
                 </div>
 
@@ -115,32 +115,32 @@
         </span>
 
         <!-- These are the contents of the settings UI. display:none is given so that there's no vertical scrollbar on the page as it's loading. When you open the settings dialog, that property will be removed automatically by JQuery UI.  -->
-        <div style="border:1px solid gray;background-color:#373737;display:none" id="settingsDialog" title="Settings">
-            <button style="margin-top:5px;" id='showInventory'>Show inventory</button><br/>
-            <button style="margin-top:5px;" id='showShop'>Shop</button><br/>
+        <div style="border:1px solid gray;background-color:#373737;display:none" id="settingsDialog" title="Cài đặt">
+            <button style="margin-top:5px;" id='showInventory'>Túi đồ</button><br/>
+            <button style="margin-top:5px;" id='showShop'>Cửa hàng</button><br/>
             <button style="margin-top:5px;" id='forfeit'>Forfeit</button><br/>
             <!-- This is also for spacing since radio buttons will always fill their margin/padding for some reason -->
-            <div style="margin-top:5px">Graphics:</div>
-            <input type="radio" name="graphicsSettings" id="graphicsLow"/><label for="graphicsLow">Low</label>
-            <input type="radio" name="graphicsSettings" id="graphicsHigh"/><label for="graphicsHigh">High</label><br/>
-            <div style="margin-top:5px">Audio:</div>
-            <input type="radio" name="audioSetting" id="audioOff"/><label for="audioOff">Off</label>
-            <input type="radio" name="audioSetting" id="audioOn"/><label for="audioOn">On</label><br/>
-            <div style="margin-top:5px">Sound:</div>
+            <div style="margin-top:5px">Đồ họa:</div>
+            <input type="radio" name="graphicsSettings" id="graphicsLow"/><label for="graphicsLow">Thấp</label>
+            <input type="radio" name="graphicsSettings" id="graphicsHigh"/><label for="graphicsHigh">Cao</label><br/>
+            <div style="margin-top:5px">Âm thanh:</div>
+            <input type="radio" name="audioSetting" id="audioOff"/><label for="audioOff">Tắt</label>
+            <input type="radio" name="audioSetting" id="audioOn"/><label for="audioOn">Mở</label><br/>
+            <div style="margin-top:5px">Hiệu ứng âm thanh:</div>
             <div id="soundSlider"></div>
-            <div style="margin-top:5px">Music:</div>
+            <div style="margin-top:5px">Âm nhạc:</div>
             <div id="musicSlider"></div>
-            <div style="margin-top:5px">Minimap position:</div>
+            <div style="margin-top:5px">Vị trí Minimap:</div>
             <input type="radio" name="minimapSetting" id="minimapUpLeft"/><label for="minimapUpLeft"></label>
             <input type="radio" name="minimapSetting" id="minimapUpRight"/><label for="minimapUpRight"></label><br/>
             <input type="radio" name="minimapSetting" id="minimapDownLeft"/><label for="minimapDownLeft"></label>
             <input type="radio" name="minimapSetting" id="minimapDownRight"/><label for="minimapDownRight"></label><br/>
             <div style="margin-top:5px"></div><!--This is just for spacing-->
-            <input type="checkbox" id="showLootNotifications"/><label for="showLootNotifications">Show loot notifications</label><br/>
-            <div style="margin-top:5px">Show life bars for:</div>
-            <input type="checkbox" id="showLifebarPlayer"/><label style="margin-top:1px" for="showLifebarPlayer">Player</label><br/>
-            <input type="checkbox" id="showLifebarEnemy"/><label style="margin-top:3px" for="showLifebarEnemy">Enemy</label><br/>
-            <input type="checkbox" id="showLifebarCastle" checked/><label style="margin-top:3px" for="showLifebarCastle">Castles</label><br/>
+            <input type="checkbox" id="showLootNotifications"/><label for="showLootNotifications">Hiện thông báo cho vật phẩm nhặt được</label><br/>
+            <div style="margin-top:5px">Hiện thanh máu cho:</div>
+            <input type="checkbox" id="showLifebarPlayer"/><label style="margin-top:1px" for="showLifebarPlayer">Người chơi</label><br/>
+            <input type="checkbox" id="showLifebarEnemy"/><label style="margin-top:3px" for="showLifebarEnemy">Kẻ thù</label><br/>
+            <input type="checkbox" id="showLifebarCastle" checked/><label style="margin-top:3px" for="showLifebarCastle">Thành</label><br/>
         </div>
 
         <div id="useItemInstructions" style="background-color:#22a050;color:white;text-align:center;"></div>
