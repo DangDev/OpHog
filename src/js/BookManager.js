@@ -168,14 +168,14 @@
                         var didFirst = false;
                         if ( imgTags[0] != '' ) {
                             purchaseString += imgTags[0];
-                            if ( numNonBlankCharImages == 2 ) purchaseString += ' or ';
+                            if ( numNonBlankCharImages == 2 ) purchaseString += ' hoặc ';
                             if ( numNonBlankCharImages == 3 ) purchaseString += ', ';
                             didFirst = true;
                         }
                         if ( imgTags[1] != '' ) {
                             purchaseString += imgTags[1];
-                            if ( numNonBlankCharImages == 2 && !didFirst ) purchaseString += ' or ';
-                            if ( numNonBlankCharImages == 3 ) purchaseString += ', or ';
+                            if ( numNonBlankCharImages == 2 && !didFirst ) purchaseString += ' hoặc ';
+                            if ( numNonBlankCharImages == 3 ) purchaseString += ', hoặc ';
                         }
                         if ( imgTags[2] != '' ) purchaseString += imgTags[2];
                         purchaseString += ')';
@@ -201,6 +201,9 @@
                     title = 'Vùng đất hòa bình';
                     html = '<div>Khoảng đen bao chùm khắp vùng đất là nơi chiến binh của bạn chưa đặt chân tới; bạn có thể thấy các vùng đất nhưng không thể thấy kẻ thù, rương báu cũng như một số vật phẩm đặc biệt khác.<br/><br/>Những chiến binh sẽ giúp ta khám phá chúng!</div>';
                 } else if ( id == 3 ) {
+                      var diamondImgTag = 
+                        '<img src="' + iconSheet.get1x1Sprite(game.Graphic.BLUE_DIAMOND, true) + '" style="vertical-align:baseline"/>';
+                       var diamondsString = '<span style="color:#00bbbb">Kim cương</span>';
                     title = 'Thách đấu kẻ thù';
                     html = '<div>Sau khi đánh bại hết lũ quái vật, bạn có quyền khiêu chiến với quái vật cấp cao hơn. Sẽ có nhiều lựa chọn cho bạn về số kẻ thù sẽ gặp. Chúng sẽ không đi lẻ tẻ đâu mà sẽ đánh hội đồng những chiến binh của bạn. Bạn sẽ nhận nhiều ' + diamondsString + ' ' + diamondImgTag + ' hơn nếu bạn đánh bại chúng, hoặc chọn bỏ qua để nhận thưởng ngay, nhưng sẽ ít hơn đấy!</div>';
                 } else if ( id == 4 ) {
