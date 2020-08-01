@@ -180,7 +180,7 @@
                         if ( imgTags[2] != '' ) purchaseString += imgTags[2];
                         purchaseString += ')';
                     }
-                    var diamondsString = '<span style="color:#00bbbb">diamonds</span>';
+                    var diamondsString = '<span style="color:#00bbbb">Kim cương</span>';
 
                     var warningString = '';
                     if ( !game.UnitPlacementUI.purchasedAtLeastOneUnit() ) {
@@ -196,7 +196,7 @@
                     var coinImgTag = 
                         '<img src="' + iconSheet.get1x1Sprite(game.Graphic.GOLD_COIN, true) + '" style="vertical-align:baseline"/>';
                     title = 'Sự thông minh của chiến binh';
-                    html = '<div>Mỗi lần bạn vào thế giới quái vật, bạn sẽ được nhận một số ' + coinImgTag + ', chúng được dùng để chiệu hồi các chiến binh. Sau khi họ xuất chiến, họ sẽ tự di chuyển và tấn công<br/><br/>Hãy nhớ rằng khi một chiến binh chết đi, sẽ cần một khoảng thời gian để họ hồi sinh trở lại. Chiến đấu một cách thông minh! </div>';
+                    html = '<div>Mỗi lần bạn vào thế giới quái vật, bạn sẽ được nhận một số ' + coinImgTag + ' nhất định, chúng được dùng để chiệu hồi các chiến binh. Sau khi họ xuất chiến, họ sẽ tự di chuyển và tấn công<br/><br/>Hãy nhớ rằng khi một chiến binh chết đi, sẽ cần một khoảng thời gian để họ hồi sinh trở lại. Chiến đấu một cách thông minh! </div>';
                 } else if ( id == 2 ) {
                     title = 'Vùng đất hòa bình';
                     html = '<div>Khoảng đen bao chùm khắp vùng đất là nơi chiến binh của bạn chưa đặt chân tới; bạn có thể thấy các vùng đất nhưng không thể thấy kẻ thù, rương báu cũng như một số vật phẩm đặc biệt khác.<br/><br/>Những chiến binh sẽ giúp ta khám phá chúng!</div>';
@@ -206,10 +206,10 @@
                 } else if ( id == 4 ) {
                     var extraInstructions = '';
                     if ( game.playerUsedKeyboard ) {
-                        extraInstructions = '(by presing "I" on your keyboard) ';
+                        extraInstructions = '(Hoặc bằng phím "I" trên bàn phím) ';
                     }
-                    title = 'Inventory Album';
-                    html = '<div>Open your inventory ' + extraInstructions + ' to see your items.<br/><br/>Here, you can equip items (like swords or shields) to an entire <i>class</i> of units at a time. You can also use items like potions and gems.</div>';
+                    title = 'Túi đò';
+                    html = '<div>Mở túi đồ của bạn trong cài đặt ' + extraInstructions + ' để xem những vật phẩm bạn có.<br/><br/>Ở đây, bạn có thể đeo trang bị (như kiếm hoặc khiên) lên người <i>class</i> các chiến binh. Bạn cũng có thể dùng các vật phẩm bổ trợ như thuốc hoặc đá quý.</div>';
                 } else if ( id == 5 ) {
                     var wolfImg = '<img src="' + charSheet.get1x1Sprite(game.Graphic.BLACK_WOLF, true) + '" style="vertical-align:bottom"/>';
                     var ravenImg = '<img src="' + charSheet.get1x1Sprite(game.Graphic.CROW_RAVEN, true) + '" style="vertical-align:bottom"/>';
