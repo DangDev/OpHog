@@ -228,46 +228,46 @@
                     var reviveImg = '<img src="' + eff24Sheet.get1x1Sprite(game.Graphic.SMALL_YELLOW_STAR, true) + '" style="vertical-align:bottom"/>';
                     var buffStatsImg = '<img src="' + eff24Sheet.get1x1Sprite(game.Graphic.MEDIUM_PURPLE_CIRCLE_2, true) + '" style="vertical-align:bottom"/>';
                     var tombstoneImg = '<img src="' + envSheet.get1x1Sprite(game.Graphic.RIP_TOMBSTONE, true) + '" style="vertical-align:bottom"/>';
-                    title = 'Scroll of Skills';
-                    var critText = 'Critical hit (' + (game.WARRIOR_CRIT_CHANCE * 100) + '% chance to do ' + (game.WARRIOR_CRIT_DAMAGE_MULT * 100) + '% damage)';
-                    html = '<div>Units gain abilities as they level up. They use these abilities randomly in battles. ' +
+                    title = 'Khả năng đặc biệt';
+                    var critText = 'Đánh chí mạng (' + (game.WARRIOR_CRIT_CHANCE * 100) + '% tăng sát thương lên ' + (game.WARRIOR_CRIT_DAMAGE_MULT * 100) + '% damage)';
+                    html = '<div>Những chiến binh có thể nhận được khả năng đặc biệt khi họ lên đủ cấp.Những kỹ năng đặc biệt này sẽ được sử dụng ngẫu nhiên trên chiến trường. ' +
                     '<ul>' +
-                        '<li>Archers can summon pets' + 
+                        '<li>Cung thủ có thể sinh ra mãnh thú' + 
                             '<ul style="margin:0em">' + 
-                                '<li>Lv. ' + game.ARCHER_SKILL_1_REQUIRED_LVL + ': Wolf ' + archImg + ' ' + wolfImg + '</li>' + 
-                                '<li>Lv. ' + game.ARCHER_SKILL_2_REQUIRED_LVL + ': Raven ' + archImg + ' ' + ravenImg + '</li>' + 
-                                '<li>Lv. ' + game.ARCHER_SKILL_3_REQUIRED_LVL + ': Dragon ' + archImg + ' ' + dragonImg + '</li>' + 
+                                '<li>Lv. ' + game.ARCHER_SKILL_1_REQUIRED_LVL + ': Liệt Diễm Lang ' + archImg + ' ' + wolfImg + '</li>' + 
+                                '<li>Lv. ' + game.ARCHER_SKILL_2_REQUIRED_LVL + ': Dạ Ô Qua ' + archImg + ' ' + ravenImg + '</li>' + 
+                                '<li>Lv. ' + game.ARCHER_SKILL_3_REQUIRED_LVL + ': Cự Huyết Long ' + archImg + ' ' + dragonImg + '</li>' + 
                             '</ul>' +
                         '</li>' +
-                        '<li>Warriors get new combat skills' + 
+                        '<li>Đấu sĩ nhận kĩ năng chiến đấu mới' + 
                             '<ul style="margin:0em">' + 
-                                '<li>Lv. ' + game.WARRIOR_SKILL_1_REQUIRED_LVL + ': Quick Attack (attack with low cooldown) ' + warImg + quickAtkImg + '</li>' + 
-                                '<li>Lv. ' + game.WARRIOR_SKILL_2_REQUIRED_LVL + ': Self-defense buff ' + warImgBlueBg + '</li>' + 
+                                '<li>Lv. ' + game.WARRIOR_SKILL_1_REQUIRED_LVL + ': Tốc kích (đánh với tốc độ cao) ' + warImg + quickAtkImg + '</li>' + 
+                                '<li>Lv. ' + game.WARRIOR_SKILL_2_REQUIRED_LVL + ': Tăng giáp ' + warImgBlueBg + '</li>' + 
                                 '<li>Lv. ' + game.WARRIOR_SKILL_3_REQUIRED_LVL + ': ' + critText + '</li>' + 
                             '</ul>' +
                         '</li>' +
-                        '<li>Wizards gain support abilities' + 
+                        '<li>Pháp sư nhận được kỹ năng bổ trợ mới' + 
                             '<ul style="margin:0em">' + 
-                                '<li>Lv. ' + game.WIZARD_SKILL_1_REQUIRED_LVL + ': Heal ' + wizImg + healImg + warFaceLeftImg + '</li>' + 
-                                '<li>Lv. ' + game.WIZARD_SKILL_2_REQUIRED_LVL + ': Buff stats' + wizImg + buffStatsImg + warImgRedBg + '</li>' + 
-                                '<li>Lv. ' + game.WIZARD_SKILL_3_REQUIRED_LVL + ': Revive ' + wizImg + reviveImg + tombstoneImg + '</li>' + 
+                                '<li>Lv. ' + game.WIZARD_SKILL_1_REQUIRED_LVL + ': Hồi máu ' + wizImg + healImg + warFaceLeftImg + '</li>' + 
+                                '<li>Lv. ' + game.WIZARD_SKILL_2_REQUIRED_LVL + ': Tăng chỉ số' + wizImg + buffStatsImg + warImgRedBg + '</li>' + 
+                                '<li>Lv. ' + game.WIZARD_SKILL_3_REQUIRED_LVL + ': Hồi sinh ' + wizImg + reviveImg + tombstoneImg + '</li>' + 
                             '</ul>' +
                         '</li>' +
                     '</ul></div>';
 
                 } else if ( id == 6 ) {
-                    title = 'Dictionary of Difficulties';
+                    title = 'Các cấp độ khó';
                     var easySpawnerImg = '<img src="' + envSheet.get1x1Sprite(game.Graphic.SPAWNER, false) + '" style="vertical-align:bottom"/>';
                     var mediumSpawnerImg = '<img src="' + envSheet.get1x1Sprite(game.Graphic.SPAWNER_MEDIUM, false) + '" style="vertical-align:bottom"/>';
                     var hardSpawnerImg = '<img src="' + envSheet.get1x1Sprite(game.Graphic.SPAWNER_HARD, false) + '" style="vertical-align:bottom"/>';
-                    html = '<div>You can gauge the relative difficulty of a world before entering it!<ul>' +
-                        '<li>' + easySpawnerImg + ': easy</li>' +
-                        '<li>' + mediumSpawnerImg + ': medium</li>' +
-                        '<li>' + hardSpawnerImg + ': hard</li>' +
-                        '</ul>Watch out though, these difficulties are relative to the area. A ' + hardSpawnerImg + ' in the forest is probably easier than a ' + mediumSpawnerImg + ' in the desert!</div>';
+                    html = '<div>Bạn có thể thấy được độ khó của các màn thông qua việc nhìn màu của chúng:<ul>' +
+                        '<li>' + easySpawnerImg + ': dễ</li>' +
+                        '<li>' + mediumSpawnerImg + ': trung bình</li>' +
+                        '<li>' + hardSpawnerImg + ': khó</li>' +
+                        '</ul>Hãy cho chiến binh của bạn luyện tập tại các màn dễ trước khi họ có đủ khả năng chinh phục các màn khó, và cũng luyện tập cho bạn những kỹ năng dẫn dắt quân đội. Hãy nhớ một điều rằng các màn sau luôn khó hơn các màn trước, vì vậy nên một màn chơi khó ' + hardSpawnerImg + ' tại khu rừng không dễ hơn một màn chơi trung bình ' + mediumSpawnerImg + ' tại sa mạc!</div>';
                 } else if ( id == 7 ) {
-                    title = 'Codex of Choices';
-                    html = '<div>The harsh fires to the east are still more welcoming than the spirits you\'ll encounter in the cemetery to the south. Should you endure those ghostly trials, you\'ll find a quicker route to the jungle.</div>';
+                    title = 'Sự lữa chọn';
+                    html = '<div>Bạn sẽ có rất nhiều đường đi khác nhau mà không nhất  harsh fires to the east are still more welcoming than the spirits you\'ll encounter in the cemetery to the south. Should you endure those ghostly trials, you\'ll find a quicker route to the jungle.</div>';
                 } else if ( id == 8 ) {
                     title = 'Hardcover of Hotkeys';
                     html = '<div>There are many shortcuts to help you. Try some out now!' + 
