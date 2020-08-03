@@ -267,18 +267,18 @@
                         '</ul>Hãy cho chiến binh của bạn luyện tập tại các màn dễ trước khi họ có đủ khả năng chinh phục các màn khó, và cũng luyện tập cho bạn những kỹ năng dẫn dắt quân đội. Hãy nhớ một điều rằng các màn sau luôn khó hơn các màn trước, vì vậy nên một màn chơi khó ' + hardSpawnerImg + ' tại khu rừng không dễ hơn một màn chơi trung bình ' + mediumSpawnerImg + ' tại sa mạc!</div>';
                 } else if ( id == 7 ) {
                     title = 'Sự lữa chọn';
-                    html = '<div>Bạn sẽ có rất nhiều đường đi khác nhau mà không nhất  harsh fires to the east are still more welcoming than the spirits you\'ll encounter in the cemetery to the south. Should you endure those ghostly trials, you\'ll find a quicker route to the jungle.</div>';
+                    html = '<div>Bạn sẽ có rất nhiều đường đi khác nhau mà không nhất thiết phải đi theo một đường duy nhất. Chọn theo quyết định của bạn.</div>';
                 } else if ( id == 8 ) {
-                    title = 'Hardcover of Hotkeys';
-                    html = '<div>There are many shortcuts to help you. Try some out now!' + 
+                    title = 'Phím tắt';
+                    html = '<div>Phím tắt giúp bạn hoạt động dễ dàng hơn!' + 
                         '<ul>' +
-                            '<li>WASD: scroll the map (hold shift to scroll faster)</li>' +
-                            '<li>Arrows+space: select units to buy/place on the lower bar</li>' +
-                            '<li>I: open/close the inventory</li>' +
-                            '<li>Y: open/close the shop</li>' +
-                            '<li>Q: sell selected inventory item</li>' +
-                            '<li>E: play music</li>' +
-                            '<li>R (only in-world): place all units you can afford</li>' +
+                            '<li>WASD: Di chuyển camera (giữ shift để nhanh hơn)</li>' +
+                            '<li>Phím mũi tên+space: Chọn chiến binh để mua/xuất trận</li>' +
+                            '<li>I: Đóng/mở túi đồ</li>' +
+                            '<li>Y: Đóng/mở cửa hàng</li>' +
+                            '<li>Q: Bán đồ được chọn trong túi đồ</li>' +
+                            '<li>E: mở nhạc</li>' +
+                            '<li>R (Chỉ trong chiến đấu): Đặt tất cả chiến binh chưa ra trận</li>' +
                         '</ul>' +
                     '</div>';
                 } else if ( id == 9 ) {
